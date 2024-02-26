@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+body {
+    font-family: "Roboto BOLD", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+.greeting {
+    grid-column: 1 / span 2;
+    background-color: rgb(250, 232, 173);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    animation: slideIn 0.5s forwards;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.profile-section {
+    display: flex;
+    flex-direction: column;
+}
+.profile-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.2s forwards;
+}
+.category-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadeIn 1.2s ;
+}
+.category-btn {
+    width: 190px;
+    height: 40px;
+    padding: 0;
+    margin: 5px;
+    background-color: rgba(0, 123, 255, 0);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    border-left: 10px solid #000000;
+
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.category-btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.category-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-info {
+    padding: 20px;
+    border-left: 2px solid #000000;
+    background-color: #f8f9fa;
+    display: none;
+    animation: fadeIn 1.5s ease;
+}
+
+
+.font-NotoSansKR{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    color: inherit;
+    /*text-decoration: none;*/
+}
+
+.font-Roboto{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.font-Roboto2{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #ff6b03;
+    font-weight: 500;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.category-info.active {
+    display: block;
+}
+
+ .material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0,
+             'opsz' 20;
+     vertical-align: middle;
+ }
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skill-item {
+    max-width: 100%; /* 최대 너비를 부모 요소에 맞게 설정 */
+    max-height: 100%; /* 최대 높이를 부모 요소에 맞게 설정 */
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block; /* 인라인 블록 요소로 표시 */
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item img {
+    display: block;
+    margin: 0 auto; /* 이미지를 가운데 정렬 */
+    border-top: 1px solid #ff6b03; /* 구분선 추가 */
+    padding-top: 10px; /* 구분선 아래 여백 추가 */
+}
+
+.skill-item:hover {
+    transform: translateY(5px); /* 커서를 올렸을 때 위로 약간 이동하는 효과 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.gallery-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
