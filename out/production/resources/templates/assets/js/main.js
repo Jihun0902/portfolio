@@ -127,6 +127,9 @@
 	function goToPage2() {
 	window.location.href = "skills.html";
 }
+function goToPage3() {
+	window.location.href = "projectTeam.html";
+}
 function goBack() {
 	window.history.back();
 }

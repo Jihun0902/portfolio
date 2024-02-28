@@ -2740,7 +2740,7 @@ input, select, textarea {
 .font-sunflower-light {
 	font-family: "Sunflower", sans-serif;
 	font-weight: 200;
-	font-size: 60px;
+	font-size: 50px;
 	font-style: normal;
 	color: #000000;
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.8);
@@ -2757,6 +2757,7 @@ input, select, textarea {
 .font-nanum-gothic{
 	font-family: "Nanum Gothic", sans-serif;
 	font-weight: 300;
+	font-size: 20px;
 	font-style: normal;
 	color: #000000;
 	text-shadow: 1px 1px 2px rgba(112, 112, 112, 0.8);
@@ -2865,16 +2866,17 @@ button {
 
 /*project 관련 그리드*/
 .image.project {
-	margin: 0 1em 0 0;
-	height: 100%;
+	margin: auto;
+	height: 80%;
 	max-width: 100%;
-	width: 600px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 500px;
+	/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
 }
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 		.image.project {
 			margin: auto;
+			height: 70%;
 			width: 400px;
 		}
 	}
@@ -2882,6 +2884,7 @@ button {
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
 		.image.project {
 			margin: auto;
+			height: 70%;
 			width: 350px;
 		}
 	}
@@ -2889,6 +2892,7 @@ button {
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
 		.image.project {
 			margin: auto;
+			height: 70%;
 			width: 300px;
 		}
 	}
@@ -2909,18 +2913,18 @@ button {
 
 
 .text.project {
-	padding: 15px;
-	margin: 0 2em 0 0;
+	padding: 5px;
+	margin: 2em 0 0 0;
 	max-width: 100%;
-	height: 800px;
-	width: 600px;
+	height: 500px;
+	width: 500px;
 	border-top: solid 2px rgba(80, 80, 80, 0.7);
 }
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 		.text.project {
 			margin: auto;
-			height: 700px;
+			height: 450px;
 			width: 450px;
 		}
 	}
@@ -2928,7 +2932,7 @@ button {
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
 		.text.project {
 			margin: auto;
-			height: 600px;
+			height: 400px;
 			width: 400px;
 		}
 	}
@@ -2936,7 +2940,7 @@ button {
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
 		.text.project {
 			margin: auto;
-			height: 500px;
+			height: 350px;
 			width: 350px;
 		}
 	}
@@ -2944,7 +2948,7 @@ button {
 	@media screen and (max-width: 960px) {
 		.text.project {
 			margin: auto;
-			height: 400px;
+			height: 300px;
 			width: 300px;
 		}
 	}
@@ -2953,7 +2957,7 @@ button {
 		.text.project {
 			margin: auto;
 			height: 300px;
-			width: 200px;
+			width: 300px;
 		}
 	}
 
@@ -2964,7 +2968,6 @@ button {
 	display: none;
 	transition: opacity 0.5s ease;
 	text-align: center;
-	/*background-color: rgba(38, 38, 38, 0.67);*/
 }
 
 .fade {
@@ -3009,7 +3012,6 @@ button {
 
 .slideshow-container {
 	position: relative;
-	width: 100%;
-	max-width: 600px;
+	max-width: 500px;
 	margin: auto;
 }

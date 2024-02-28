@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/main/resources/templates/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="src/main/resources/templates/assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <title>project-1</title>
 </head>
 <style>
     body{
-        background-image: url('src/main/resources/templates/images/bg_white.jpg');
+        /*background-image: url('src/main/resources/templates/images/bg/bg_white2.jpg');*/
         background-size: cover;
         background-position: center;
     }
@@ -19,7 +22,7 @@
 <body>
 
 <div class="page" id="page2">
-    <a class="font-sunflower-light"> 캡스톤 디자인 : 통합성과 경진대회 </a>
+    <a class="font-sunflower-light"> <br><br>캡스톤 디자인 : 통합성과 경진대회 </a>
 
     <div class="info-grid1_2">
         <div class="image project">
@@ -27,18 +30,30 @@
             <div class="slideshow-container">
                 <div class="slide fade">
                     <img src="src/main/resources/templates/images/project/01.jpg" alt="" />
+                    <div class="font-nanum-gothic2">1/6</div>
                 </div>
                 <div class="slide fade">
                         <img src="src/main/resources/templates/images/project/02.jpg" alt="" />
+                        <div class="font-nanum-gothic2">2/6</div>
                 </div>
                 <div class="slide fade">
                         <img src="src/main/resources/templates/images/project/03.jpg" alt="" />
+                        <div class="font-nanum-gothic2">3/6</div>
                 </div>
                 <div class="slide fade">
                         <img src="src/main/resources/templates/images/project/04.jpg" alt="" />
+                        <div class="font-nanum-gothic2">4/6</div>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="slide fade">
+                    <img src="src/main/resources/templates/images/project/05.jpg" alt="" />
+                    <div class="font-nanum-gothic2">5/6</div>
+                </div>
+                <div class="slide fade">
+                    <img src="src/main/resources/templates/images/project/06.gif" alt="" />
+                    <div class="font-nanum-gothic2">6/6</div>
+                </div>
+                <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                <span class="next" onclick="plusSlides(1)">&#10095;</span>
             </div>
         </div>
         <div class="text project">
@@ -46,7 +61,7 @@
             <p><br>대학생 때 친구들과 함께 참여했던 캡스톤 디자인 팀 프로젝트입니다.<br>
                 입구에서 차량을 인식하면 로봇이 자동으로 입차와 출차를 해주는 시스템으로 다양한 기술들을 구현했습니다.<br>
                 프로젝트 진행 12주동안 변수로 인한 문제들이 자주 발생해 고단한 과정이었지만 결국 기간에 맞춰 완성하여 공모전에 출전할 수 있었습니다.
-                시간이 부족해 종종 학교에서 숙식을 하기도 했는데 굉장히 즐거운 기억으로 남아있습니다.<br>
+                할 일이 많아 종종 학교에서 숙식을 했는데 굉장히 즐거운 기억으로 남아있습니다.<br>
                 <div class="material-symbols-outlined">search</div><br>
                 주요기능 : 웹캠 번호판 인식, 웹&앱 로그인 관리, 데이터 베이스 및 서버 구축, 무인 로봇 가동 프로그래밍<br>
                 스택 : javascript, html, nodejs, mraiaDB, Raspberry Pi
@@ -60,15 +75,15 @@
 </div>
 
 
-<!-- Footer -->
-<!--<div id="footer">-->
+<!-- Footer-->
+<div id="footer">
 
-<!--    &lt;!&ndash; Copyright &ndash;&gt;-->
-<!--    <ul class="copyright">-->
-<!--        <li>&copy;by zihun 2024 All rights reserved</li><li>Development: intelliJ</li>-->
-<!--    </ul>-->
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy;by zihun 2024 All rights reserved</li><li>made : intelliJ</li><li>java</li><li>spring</li>
+    </ul>
 
-<!--</div>-->
+</div>
 
 <!-- Scripts -->
 <script src="src/main/resources/templates/assets/js/jquery.min.js"></script>
