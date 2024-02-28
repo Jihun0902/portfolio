@@ -127,6 +127,42 @@
 	function goToPage2() {
 	window.location.href = "skills.html";
 }
+function goToPage3() {
+	window.location.href = "projectTeam.html";
+}
 function goBack() {
 	window.history.back();
+}
+
+
+//슬라이드 이미지
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+	showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+	let i;
+	const slides = document.getElementsByClassName("slide");
+
+	// 처음부터 다시 시작
+	if (n > slides.length) {
+		slideIndex = 1;
+	}
+	// 끝에서 다시 시작
+	if (n < 1) {
+		slideIndex = slides.length;
+	}
+	// 모든 슬라이드를 숨김
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	// 현재 슬라이드를 보임
+	slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+	showSlides(slideIndex += n); // plusSlides 함수에서 인자를 전달하여 showSlides 함수 호출
 }
