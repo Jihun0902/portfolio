@@ -123,6 +123,7 @@
 })(jQuery);
 
 
+
 //페이지 이동
 	function goToPage2() {
 	window.location.href = "skills.html";
@@ -130,6 +131,12 @@
 function goToPage3() {
 	window.location.href = "projectTeam.html";
 }
+
+function goToPage4() {
+	window.location.href = "projectVacc.html";
+}
+
+
 function goBack() {
 	window.history.back();
 }
